@@ -82,13 +82,13 @@ def get_distribution_of_stops(seqiorec: SeqRecord, window: int = 210, step: int 
 
     stops_distr = {
         'x': range(1, len(seqiorec.seq) + 1),
-        'TAA': [np.NAN]*int(window/2),
-        'TAG': [np.NAN]*int(window/2),
-        'TGA': [np.NAN]*int(window/2)
+        'TAA': [np.NAN]*int(step/2),
+        'TAG': [np.NAN]*int(step/2),
+        'TGA': [np.NAN]*int(step/2)
     }
     
     i = 0
-    while i + window/2 + 1 <= len(seqiorec.seq) - window/2:
+    while i < len(seqiorec.seq):
         window_seq = seqiorec.seq[i : i + window]
         taa = window_seq.count('TAA')
         tag = window_seq.count('TAG')
