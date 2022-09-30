@@ -1,0 +1,90 @@
+
+tRNAscan-SE v.2.0.9 (July 2021) scan results (on host hpc-head01)
+Started: Thu Sep 29 21:52:28 ACST 2022
+
+------------------------------------------------------------
+Sequence file(s) to search:        test-data/UAG-readthrough_crAss_clade_sp._strain_cr150_1.fasta
+Search Mode:                       Bacterial
+Results written to:                test-data/UAG-readthrough_crAss_clade_sp._strain_cr150_1sta.out
+Output format:                     Tabular
+Searching with:                    tRNAscan + EufindtRNA -> Cove
+Isotype-specific model scan:       No
+Covariance model:                  /home/nala0006/miniconda3/envs/phicore/lib/tRNAscan-SE/models/TRNA2-bact.cm
+tRNAscan parameters:               Strict
+EufindtRNA parameters:             Relaxed (Int Cutoff= -36.0)
+
+Temporary directory:               /tmp
+tRNA secondary structure
+    predictions saved to:          test-data/UAG-readthrough_crAss_clade_sp._strain_cr150_1sta.ss
+tRNA predictions saved to:         test-data/UAG-readthrough_crAss_clade_sp._strain_cr150_1sta.bed
+Search log saved in:               test-data/UAG-readthrough_crAss_clade_sp._strain_cr150_1sta.log
+Search statistics saved in:        test-data/UAG-readthrough_crAss_clade_sp._strain_cr150_1sta.stats
+------------------------------------------------------------
+
+First-pass Stats:
+---------------
+Sequences read:         1
+Seqs w/at least 1 hit:  1
+Bases read:             101130 (x2 for both strands)
+Bases in tRNAs:         550
+tRNAs predicted:        7
+Av. tRNA length:        78
+Script CPU time:        0.01 s
+Scan CPU time:          0.02 s
+Scan speed:             10113.0 Kbp/sec
+
+First pass search(es) ended: Thu Sep 29 21:52:28 ACST 2022
+
+Cove Stats:
+-----------
+Candidate tRNAs read:     7
+Cove-confirmed tRNAs:     5
+Bases scanned by Cove:  690
+% seq scanned by Cove:  0.3 %
+Script CPU time:          0.04 s
+Cove CPU time:            0.58 s
+Scan speed:               1189.7 bp/sec
+
+Cove analysis of tRNAs ended: Thu Sep 29 21:52:29 ACST 2022
+
+Summary
+--------
+Overall scan speed: 311169.2 bp/sec
+
+tRNAs decoding Standard 20 AA:              2
+Selenocysteine tRNAs (TCA):                 0
+Possible suppressor tRNAs (CTA,TTA,TCA):    1
+tRNAs with undetermined/unknown isotypes:   2
+Predicted pseudogenes:                      0
+                                            -------
+Total tRNAs:                                5
+
+tRNAs with introns:     	0
+
+|
+
+Isotype / Anticodon Counts:
+
+Ala     : 0	  AGC:         GGC:         CGC:         TGC:       
+Gly     : 0	  ACC:         GCC:         CCC:         TCC:       
+Pro     : 0	  AGG:         GGG:         CGG:         TGG:       
+Thr     : 0	  AGT:         GGT:         CGT:         TGT:       
+Val     : 0	  AAC:         GAC:         CAC:         TAC:       
+Ser     : 0	  AGA:         GGA:         CGA:         TGA:         ACT:         GCT:       
+Arg     : 1	  ACG:         GCG:         CCG:         TCG:         CCT:         TCT: 1     
+Leu     : 1	  AAG:         GAG:         CAG:         TAG:         CAA:         TAA: 1     
+Phe     : 0	  AAA:         GAA:                                 
+Asn     : 0	  ATT:         GTT:                                 
+Lys     : 0	                            CTT:         TTT:       
+Asp     : 0	  ATC:         GTC:                                 
+Glu     : 0	                            CTC:         TTC:       
+His     : 0	  ATG:         GTG:                                 
+Gln     : 0	                            CTG:         TTG:       
+Ile     : 0	  AAT:         GAT:         CAT:         TAT:       
+Met     : 0	                            CAT:                    
+Tyr     : 0	  ATA:         GTA:                                 
+Supres  : 1	               CTA: 1       TTA:         TCA:       
+Cys     : 0	  ACA:         GCA:                                 
+Trp     : 0	                            CCA:                    
+SelCys  : 0	                                         TCA:       
+

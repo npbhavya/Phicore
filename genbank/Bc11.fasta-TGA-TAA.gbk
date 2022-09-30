@@ -2,218 +2,326 @@ LOCUS       contig_1_rc     90579 bp    DNA             PHG
 DEFINITION  contig_1_rc
 FEATURES             Location/Qualifiers
      source          1..90579
+                     /color=8
      CDS             complement(<2..340)
                      /note="weight=-8.56E+2;"
+                     /color=8
      CDS             318..515
                      /note="weight=-1.00E-1;"
+                     /color=8
      CDS             complement(524..1132)
                      /note="weight=-8.67E+6;"
+                     /color=8
      CDS             complement(1134..1322)
                      /note="weight=-4.07E+2;"
+                     /color=8
      CDS             complement(1322..2326)
                      /note="weight=-1.20E+13;"
+                     /color=8
      CDS             complement(2323..3054)
                      /note="weight=-3.80E+8;"
+                     /color=8
      CDS             complement(3035..3541)
                      /note="weight=-3.48E+4;"
+                     /color=8
      CDS             complement(3544..4176)
                      /note="weight=-4.32E+6;"
+                     /color=8
      CDS             complement(4194..4313)
                      /note="weight=-4.21E-1;"
+                     /color=8
      CDS             complement(4381..4485)
                      /note="weight=-1.45E-1;"
+                     /color=8
      CDS             complement(4576..4749)
                      /note="weight=-1.26E+0;"
+                     /color=8
      CDS             4917..5510
                      /note="weight=-1.09E+7;"
+                     /color=8
      CDS             complement(5495..5608)
                      /note="weight=-2.24E+0;"
+                     /color=8
      CDS             5678..5905
                      /note="weight=-2.37E+1;"
+                     /color=8
      CDS             5913..6005
                      /note="weight=-9.95E+0;"
+                     /color=8
      CDS             6002..6199
                      /note="weight=-4.15E+0;"
+                     /color=8
      CDS             6309..6905
                      /note="weight=-2.60E+5;"
+                     /color=8
      CDS             6946..7176
                      /note="weight=-1.02E+0;"
+                     /color=8
      CDS             7163..7438
                      /note="weight=-1.97E+1;"
+                     /color=8
      CDS             7442..7720
                      /note="weight=-5.14E+1;"
+                     /color=8
      CDS             7717..7833
                      /note="weight=-6.71E+0;"
+                     /color=8
      CDS             7814..7906
                      /note="weight=-2.05E+0;"
+                     /color=8
      CDS             7958..8056
                      /note="weight=-1.47E-1;"
+                     /color=8
      CDS             8053..8466
                      /note="weight=-3.11E+0;"
+                     /color=8
      CDS             8528..8797
                      /note="weight=-5.11E+2;"
+                     /color=8
      CDS             8785..9210
                      /note="weight=-1.02E+5;"
+                     /color=8
      CDS             9216..9545
                      /note="weight=-3.62E+3;"
+                     /color=8
      CDS             9566..9757
                      /note="weight=-5.12E+1;"
+                     /color=8
      CDS             9757..10071
                      /note="weight=-5.53E+3;"
+                     /color=8
      CDS             10077..10418
                      /note="weight=-7.74E+2;"
+                     /color=8
      CDS             10481..10639
                      /note="weight=-1.58E+2;"
+                     /color=8
      CDS             10663..11232
                      /note="weight=-1.06E+7;"
+                     /color=8
      CDS             11240..11356
                      /note="weight=-1.37E+0;"
+                     /color=8
      CDS             11474..11770
                      /note="weight=-1.23E+4;"
+                     /color=8
      CDS             11757..11858
                      /note="weight=-1.62E+0;"
+                     /color=8
      CDS             11926..12102
                      /note="weight=-2.10E-1;"
+                     /color=8
      CDS             12106..12360
                      /note="weight=-1.00E+3;"
+                     /color=8
      CDS             12415..12510
                      /note="weight=-7.28E-2;"
+                     /color=8
      CDS             12507..12626
                      /note="weight=-4.83E+0;"
+                     /color=8
      CDS             12628..12855
                      /note="weight=-4.04E+1;"
+                     /color=8
      CDS             12856..13167
                      /note="weight=-3.18E+3;"
+                     /color=8
      CDS             13160..13621
                      /note="weight=-2.67E+3;"
+                     /color=8
      CDS             13618..13986
                      /note="weight=-8.21E+3;"
+                     /color=8
      CDS             13931..15418
                      /note="weight=-6.75E+15;"
+                     /color=8
      CDS             15369..15794
                      /note="weight=-1.35E+3;"
+                     /color=8
      CDS             15749..15958
                      /note="weight=-5.24E+2;"
+                     /color=8
      CDS             15961..18243
                      /note="weight=-5.03E+27;"
+                     /color=8
      CDS             18249..19394
                      /note="weight=-3.31E+12;"
+                     /color=8
      CDS             complement(19380..19481)
                      /note="weight=-7.66E-2;"
+                     /color=8
      CDS             19570..20205
                      /note="weight=-4.37E+3;"
+                     /color=8
      CDS             20268..20588
                      /note="weight=-1.22E+3;"
+                     /color=8
      CDS             20661..21566
                      /note="weight=-3.29E+10;"
+                     /color=8
      CDS             21636..22442
                      /note="weight=-4.46E+6;"
+                     /color=8
      CDS             complement(22520..22609)
                      /note="weight=-1.01E-1;"
+                     /color=8
      CDS             22618..23607
                      /note="weight=-1.23E+10;"
+                     /color=8
      CDS             23677..24867
                      /note="weight=-5.74E+15;"
+                     /color=8
      CDS             24800..25291
                      /note="weight=-1.72E+6;"
+                     /color=8
      CDS             25288..25752
                      /note="weight=-2.06E+5;"
+                     /color=8
      CDS             25749..26960
                      /note="weight=-2.93E+15;"
+                     /color=8
      CDS             26970..27329
                      /note="weight=-1.26E+5;"
+                     /color=8
      CDS             27417..27566
                      /note="weight=-2.71E-1;"
+                     /color=8
      CDS             27722..29191
                      /note="weight=-6.81E+18;"
+                     /color=8
      CDS             29188..29388
                      /note="weight=-6.36E+1;"
+                     /color=8
      CDS             29372..29647
                      /note="weight=-3.44E+2;"
+                     /color=8
      CDS             29613..29945
                      /note="weight=-1.32E+3;"
+                     /color=8
      CDS             29905..30939
                      /note="weight=-8.45E+12;"
+                     /color=8
      CDS             30926..31126
                      /note="weight=-7.19E+0;"
+                     /color=8
      CDS             31104..31337
                      /note="weight=-2.24E+2;"
+                     /color=8
      CDS             31337..32119
                      /note="weight=-1.01E+10;"
+                     /color=8
      CDS             32121..32246
                      /note="weight=-7.35E+1;"
+                     /color=8
      CDS             32250..33344
                      /note="weight=-4.12E+12;"
+                     /color=8
      CDS             complement(33341..33580)
                      /note="weight=-1.33E+0;"
+                     /color=8
      CDS             33568..34095
                      /note="weight=-9.70E+4;"
+                     /color=8
      CDS             34031..34324
                      /note="weight=-8.46E+2;"
+                     /color=8
      CDS             34337..34465
                      /note="weight=-2.94E+1;"
+                     /color=8
      CDS             34549..34902
                      /note="weight=-1.45E+4;"
+                     /color=8
      CDS             34928..35020
                      /note="weight=-1.29E+0;"
+                     /color=8
      CDS             35271..35606
                      /note="weight=-2.21E+3;"
+                     /color=8
      CDS             35648..36103
                      /note="weight=-7.89E+4;"
+                     /color=8
      CDS             complement(36126..48257)
                      /note="weight=-2.08E+150;"
+                     /color=8
      CDS             complement(48254..48424)
                      /note="weight=-2.00E+1;"
+                     /color=8
      CDS             complement(48509..49339)
                      /note="weight=-2.53E+7;"
+                     /color=8
      CDS             complement(49327..54798)
                      /note="weight=-3.00E+55;"
+                     /color=8
      CDS             complement(54632..57370)
                      /note="weight=-5.19E+29;"
+                     /color=8
      CDS             complement(57372..59645)
                      /note="weight=-2.81E+22;"
+                     /color=8
      CDS             complement(59652..64025)
                      /note="weight=-2.30E+44;"
+                     /color=8
      CDS             complement(63940..64725)
                      /note="weight=-2.42E+7;"
+                     /color=8
      CDS             complement(64673..65671)
                      /note="weight=-1.78E+10;"
+                     /color=8
      CDS             complement(65668..66363)
                      /note="weight=-2.82E+7;"
+                     /color=8
      CDS             complement(66475..66645)
                      /note="weight=-3.16E-1;"
+                     /color=8
      CDS             complement(66642..66731)
                      /note="weight=-4.04E-1;"
+                     /color=8
      CDS             complement(66755..67069)
                      /note="weight=-1.57E+4;"
+                     /color=8
      CDS             complement(67157..71272)
                      /note="weight=-3.09E+30;"
+                     /color=8
      CDS             complement(71277..73829)
                      /note="weight=-2.85E+18;"
+                     /color=8
      CDS             complement(73847..78346)
                      /note="weight=-5.97E+33;"
+                     /color=8
      CDS             complement(78398..78913)
                      /note="weight=-1.54E+7;"
+                     /color=8
      CDS             complement(78910..79152)
                      /note="weight=-5.60E+0;"
+                     /color=8
      CDS             complement(79159..79740)
                      /note="weight=-7.00E+7;"
+                     /color=8
      CDS             complement(79826..80776)
                      /note="weight=-2.76E+5;"
+                     /color=8
      CDS             complement(80715..81371)
                      /note="weight=-1.01E+7;"
+                     /color=8
      CDS             complement(81402..82547)
                      /note="weight=-1.03E+10;"
+                     /color=8
      CDS             complement(82565..84037)
                      /note="weight=-2.38E+14;"
+                     /color=8
      CDS             complement(84070..85341)
                      /note="weight=-1.73E+16;"
+                     /color=8
      CDS             85518..85673
                      /note="weight=-1.99E+0;"
+                     /color=8
      CDS             complement(85747..88158)
                      /note="weight=-6.72E+28;"
+                     /color=8
      CDS             complement(88180..90495)
                      /note="weight=-9.20E+25;"
+                     /color=8
+BASE COUNT    31673 a  13807 c  12593 g  32506 t
 ORIGIN
         1 ttttaacttc ttctttatat tgattagtta gttctactat tttagaattt ctatctttaa
        61 tattcttttc taaaatatct atttgagtct tttgcatttc aactatattt tgaaaactat

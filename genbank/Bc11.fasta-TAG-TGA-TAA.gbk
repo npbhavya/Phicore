@@ -204,6 +204,7 @@ FEATURES             Location/Qualifiers
                      /note="weight=-4.33E+28;"
      CDS             complement(88180..90495)
                      /note="weight=-7.62E+25;"
+BASE COUNT    31673 a  13807 c  12593 g  32506 t
 ORIGIN
         1 ttttaacttc ttctttatat tgattagtta gttctactat tttagaattt ctatctttaa
        61 tattcttttc taaaatatct atttgagtct tttgcatttc aactatattt tgaaaactat
