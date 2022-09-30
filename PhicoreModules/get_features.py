@@ -3,6 +3,7 @@ import pandas as pd
 from Bio.Seq import Seq
 from Bio.SeqFeature import SeqFeature
 from Bio.SeqRecord import SeqRecord
+from scipy.stats import entropy
 from typing import List, Union
 import os
 import sys
@@ -88,13 +89,13 @@ def get_distribution_of_stops(seqiorec: SeqRecord, window: int = 210, step: int 
 
     stops_distr = {
         'x': range(1, len(seqiorec.seq) + 1),
-        'TAA': [np.NAN]*int(window/2),
-        'TAG': [np.NAN]*int(window/2),
-        'TGA': [np.NAN]*int(window/2)
+        'TAA': [np.NAN]*int(step/2),
+        'TAG': [np.NAN]*int(step/2),
+        'TGA': [np.NAN]*int(step/2)
     }
     
     i = 0
-    while i + window/2 + 1 <= len(seqiorec.seq) - window/2:
+    while i < len(seqiorec.seq):
         window_seq = seqiorec.seq[i : i + window]
         taa = window_seq.count('TAA')
         tag = window_seq.count('TAG')
@@ -113,6 +114,192 @@ def get_distribution_of_stops(seqiorec: SeqRecord, window: int = 210, step: int 
 
     return pd.DataFrame(stops_distr)
 
+def get_codon_num_in_frame(seq: Union[str, SeqRecord, Seq], codon: str) -> int:
+    """
+    Count the number of codons in a sequence in the first frame.
+    :param: seq: nucleotide sequence
+    :param: codon: codon to count
+    :return: number of codons
+    """
+
+    codons_num = 0
+    for i in range(0, len(seq), 3):
+        if seq[i:i+3] == codon:
+            codons_num += 1
+    return codons_num
+
+def get_distribution_of_stops_per_frame(seqiorec : Union[str, SeqRecord, Seq], strand : int = 1, window : int = 210, step : int = 30):
+    """
+    Get distribution of stops
+    :param seqiorec: nucleotide sequence to be searched
+    :param strand: strand to be searched
+    :param window: window size to consider
+    :param step: step size to consider
+    :return:
+    """
+
+    # change strand if needed
+    if strand == -1:
+        seqiorec = seqiorec.reverse_complement()
+
+    stops = ['TAA', 'TAG', 'TGA']
+
+    # the array starts and ends with NaNs because the distribution of certain stop codon is plotted in the middle of the window
+    stops_frame_distr = {
+        'x': range(1, len(seqiorec.seq) + 1),
+
+        f'{strand}-TAA': [np.NAN]*int(window/2),
+        f'{strand}-TAG': [np.NAN]*int(window/2),
+        f'{strand}-TGA': [np.NAN]*int(window/2),
+
+        f'{strand * 2}-TAA': [np.NAN]*int(window/2),
+        f'{strand * 2}-TAG': [np.NAN]*int(window/2),
+        f'{strand * 2}-TGA': [np.NAN]*int(window/2),
+
+        f'{strand * 3}-TAA': [np.NAN]*int(window/2),
+        f'{strand * 3}-TAG': [np.NAN]*int(window/2),
+        f'{strand * 3}-TGA': [np.NAN]*int(window/2)
+    }
+    
+    i = 0
+    while i + window/2 + 3 <= len(seqiorec.seq) - window/2:
+        for frame in range(3):
+            taa = get_codon_num_in_frame(seqiorec.seq[i + frame : i + window + frame], 'TAA')
+            tag = get_codon_num_in_frame(seqiorec.seq[i + frame : i + window + frame], 'TAG')
+            tga = get_codon_num_in_frame(seqiorec.seq[i + frame : i + window + frame], 'TGA')
+            stops_frame_distr[f'{strand * (frame + 1)}-TAA'].extend([taa]*(step))
+            stops_frame_distr[f'{strand * (frame + 1)}-TAG'].extend([tag]*(step))
+            stops_frame_distr[f'{strand * (frame + 1)}-TGA'].extend([tga]*(step))
+            # print(frame, taa)
+        i += step
+        
+    i -= step
+    left = len(stops_frame_distr['x']) - len(stops_frame_distr[f'{strand}-TAA'])
+    if left > 0:
+        for frame in range(3):
+            stops_frame_distr[f'{strand * (frame + 1)}-TAA'].extend([np.NAN]*left)
+            stops_frame_distr[f'{strand * (frame + 1)}-TAG'].extend([np.NAN]*left)
+            stops_frame_distr[f'{strand * (frame + 1)}-TGA'].extend([np.NAN]*left)
+
+    return pd.DataFrame(stops_frame_distr)
+
+def get_distribution_of_stops_for_all_strands(seqiorec : Union[str, SeqRecord, Seq], window : int = 210, step : int = 30):
+    """
+    Get distribution of stops for all strands
+    :param seqiorec: nucleotide sequence to be searched
+    :param window: window size to consider
+    :param step: step size to consider
+    :return:
+    """
+
+    # positive strand
+    dfp = get_distribution_of_stops_per_frame(seqiorec, 1, window, step)
+    # negative strand
+    dfn = get_distribution_of_stops_per_frame(seqiorec, -1, window, step)
+    dfn.sort_values(by="x", ascending=False, ignore_index=True, inplace=True)
+    dfn.drop('x', axis=1, inplace = True)
+    df = pd.concat([dfp, dfn], axis=1)
+
+    return df
+
+def filter_codons(seqiorec : Union[str, SeqRecord, Seq], codons : List[str] = ['TAA', 'TAG', 'TGA']):
+    """
+    Get only stops from a sequence
+    :param seqiorec: nucleotide sequence to be searched
+    :return:
+    """
+
+    if isinstance(seqiorec, SeqRecord):
+        seq = str(seqiorec.seq)
+    elif isinstance(seqiorec, Seq):
+        seq = str(seqiorec)
+        
+    selected_codons = []
+    for codon in [seq[i:i+3] for i in range(0, len(seq), 3)]:
+        if codon in codons:
+            selected_codons.append(codon)
+
+    return selected_codons
+
+def probability_of_codons(codons : List[str]):
+    """
+    Get frequency of codons
+    :param codons: list of codons
+    :return:
+    """
+    
+    probability = []
+    for codon in set(codons):
+        probability.append(1/codons.count(codon))
+
+    return probability
+
+def get_entropy_of_stops_per_frame(seqiorec : Union[str, SeqRecord, Seq], strand : int = 1, window : int = 210, step : int = 30):
+    """
+    Get entropy of STOPs
+    :param seqiorec: nucleotide sequence to be searched
+    :param strand: strand to be searched
+    :param window: window size to consider
+    :param step: step size to consider
+    :return:
+    """
+
+    # change strand if needed
+    if strand == -1:
+        seqiorec = seqiorec.reverse_complement()
+
+    stops = ['TAA', 'TAG', 'TGA']
+
+    # the array starts and ends with NaNs because the distribution of certain stop codon is plotted in the middle of the window
+    stops_frame_entropy = {
+        'x': range(1, len(seqiorec.seq) + 1),
+
+        f'{strand}-H1': [np.NAN]*int(window/2),
+        f'{strand}-H2': [np.NAN]*int(window/2),
+        f'{strand}-H3': [np.NAN]*int(window/2),
+    }
+    
+    i = 0
+    while i + window/2 + 3 <= len(seqiorec.seq) - window/2:
+
+        for frame in range(3):
+            # get the stops that occur in sequence window
+            frame_stops = filter_codons(seqiorec.seq[i + frame : i + window + frame], stops)
+            # calculate the entropy of the these stops
+            if len(frame_stops) > 1:
+                frame_H = entropy(probability_of_codons(frame_stops))
+            else:
+                frame_H = 0
+            # save result
+            stops_frame_entropy[f'{strand}-H{(frame + 1)}'].extend([frame_H]*(step))
+        i += step
+    
+    i -= step
+    left = len(stops_frame_entropy['x']) - len(stops_frame_entropy[f'{strand}-H1'])
+    if left > 0:
+        for frame in range(3):
+            stops_frame_entropy[f'{strand}-H{(frame + 1)}'].extend([np.NAN]*left)
+
+    return pd.DataFrame(stops_frame_entropy)
+
+def get_entropy_of_stops_for_all_strands(seqiorec : Union[str, SeqRecord, Seq], window : int = 210, step : int = 30):
+    """
+    Get entropy of stops for all strands
+    :param seqiorec: nucleotide sequence to be searched
+    :param window: window size to consider
+    :param step: step size to consider
+    :return:
+    """
+
+    # positive strand
+    dfp = get_entropy_of_stops_per_frame(seqiorec, 1, window, step)
+    # negative strand
+    dfn = get_entropy_of_stops_per_frame(seqiorec, -1, window, step)
+    dfn.sort_values(by="x", ascending=False, ignore_index=True, inplace=True)
+    dfn.drop('x', axis=1, inplace = True)
+    df = pd.concat([dfp, dfn], axis=1)
+
+    return df
 
 # George Bouras
 def get_mean_cds_length_rec_window(seqiorec : SeqRecord, window_begin : int, window_end : int) -> float:
