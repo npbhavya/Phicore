@@ -1,0 +1,131 @@
+gene_id	1	recodings	0	codon_index_values
+gene_id	2	recodings	6	codon_index_values	38	TAG	48	TAG	186	TAG	205	TAG	235	TAG	337	TAG
+gene_id	3	recodings	0	codon_index_values
+gene_id	4	recodings	0	codon_index_values
+gene_id	4.11	recodings	0	codon_index_values
+gene_id	4.15	recodings	1	codon_index_values	85	TAG
+gene_id	5	recodings	8	codon_index_values	33	TAG	36	TAG	38	TAG	60	TAG	63	TAG	69	TAG	90	TAG	156	TAG
+gene_id	6	recodings	0	codon_index_values
+gene_id	7	recodings	0	codon_index_values
+gene_id	8	recodings	0	codon_index_values
+gene_id	9	recodings	1	codon_index_values	127	TAG
+gene_id	10	recodings	0	codon_index_values
+gene_id	11	recodings	6	codon_index_values	46	TAG	63	TAG	109	TAG	148	TAG	163	TAG	175	TAG
+gene_id	12	recodings	5	codon_index_values	4	TAG	106	TAG	116	TAG	181	TAG	207	TAG
+gene_id	13	recodings	6	codon_index_values	3	TAG	18	TAG	31	TAG	42	TAG	70	TAG	123	TAG
+gene_id	14	recodings	0	codon_index_values
+gene_id	15	recodings	5	codon_index_values	46	TAG	47	TAG	73	TAG	151	TAG	179	TAG
+gene_id	16	recodings	17	codon_index_values	18	TAG	259	TAG	319	TAG	323	TAG	366	TAG	412	TAG	486	TAG	610	TAG	856	TAG	992	TAG	994	TAG	1013	TAG	1040	TAG	1050	TAG	1160	TAG	1207	TAG	1379	TAG
+gene_id	17	recodings	0	codon_index_values
+gene_id	18	recodings	5	codon_index_values	40	TAG	175	TAG	255	TAG	260	TAG	275	TAG
+gene_id	19	recodings	12	codon_index_values	1	TAG	32	TAG	42	TAG	46	TAG	62	TAG	219	TAG	240	TAG	348	TAG	380	TAG	382	TAG	397	TAG	461	TAG
+gene_id	20	recodings	0	codon_index_values
+gene_id	21	recodings	69	codon_index_values	87	TAG	120	TAG	123	TAG	126	TAG	187	TAG	300	TAG	476	TAG	519	TAG	565	TAG	613	TAG	677	TAG	766	TAG	779	TAG	788	TAG	839	TAG	887	TAG	905	TAG	958	TAG	989	TAG	1022	TAG	1034	TAG	1047	TAG	1051	TAG	1065	TAG	1128	TAG	1133	TAG	1140	TAG	1262	TAG	1338	TAG	1391	TAG	1553	TAG	1618	TAG	1646	TAG	1672	TAG	1973	TAG	2203	TAG	2293	TAG	2352	TAG	2367	TAG	2637	TAG	2753	TAG	2775	TAG	2958	TAG	2973	TAG	2992	TAG	3041	TAG	3134	TAG	3194	TAG	3364	TAG	3371	TAG	3536	TAG	3678	TAG	3714	TAG	3758	TAG	3853	TAG	3890	TAG	3949	TAG	4130	TAG	4156	TAG	4183	TAG	4277	TAG	4283	TAG	4303	TAG	4314	TAG	4366	TAG	4466	TAG	4484	TAG	4491	TAG	4637	TAG
+gene_id	22	recodings	0	codon_index_values
+gene_id	23	recodings	35	codon_index_values	47	TAG	79	TAG	124	TAG	170	TAG	219	TAG	301	TAG	326	TAG	331	TAG	440	TAG	485	TAG	525	TAG	556	TAG	643	TAG	655	TAG	727	TAG	763	TAG	799	TAG	831	TAG	838	TAG	881	TAG	913	TAG	972	TAG	1068	TAG	1088	TAG	1090	TAG	1181	TAG	1200	TAG	1214	TAG	1216	TAG	1232	TAG	1262	TAG	1281	TAG	1400	TAG	1409	TAG	1452	TAG
+gene_id	24	recodings	0	codon_index_values
+gene_id	25	recodings	0	codon_index_values
+gene_id	26	recodings	0	codon_index_values
+gene_id	27	recodings	0	codon_index_values
+gene_id	28	recodings	1	codon_index_values	3	TAG
+gene_id	29	recodings	0	codon_index_values
+gene_id	30	recodings	0	codon_index_values
+gene_id	31	recodings	0	codon_index_values
+gene_id	32	recodings	0	codon_index_values
+gene_id	33	recodings	0	codon_index_values
+gene_id	34	recodings	0	codon_index_values
+gene_id	35	recodings	0	codon_index_values
+gene_id	36	recodings	0	codon_index_values
+gene_id	37	recodings	0	codon_index_values
+gene_id	38	recodings	0	codon_index_values
+gene_id	39	recodings	0	codon_index_values
+gene_id	40	recodings	0	codon_index_values
+gene_id	41	recodings	0	codon_index_values
+gene_id	41.11	recodings	0	codon_index_values
+gene_id	41.15	recodings	2	codon_index_values	208	TAG	209	TAG
+gene_id	42	recodings	0	codon_index_values
+gene_id	42.11	recodings	0	codon_index_values
+gene_id	42.15	recodings	1	codon_index_values	140	TAG
+gene_id	43	recodings	0	codon_index_values
+gene_id	44	recodings	0	codon_index_values
+gene_id	45	recodings	0	codon_index_values
+gene_id	46	recodings	0	codon_index_values
+gene_id	47	recodings	0	codon_index_values
+gene_id	48	recodings	0	codon_index_values
+gene_id	48.11	recodings	0	codon_index_values
+gene_id	48.15	recodings	1	codon_index_values	153	TAG
+gene_id	49	recodings	0	codon_index_values
+gene_id	50	recodings	0	codon_index_values
+gene_id	51	recodings	0	codon_index_values
+gene_id	52	recodings	0	codon_index_values
+gene_id	52.11	recodings	0	codon_index_values
+gene_id	52.15	recodings	1	codon_index_values	71	TAG
+gene_id	53	recodings	0	codon_index_values
+gene_id	54	recodings	0	codon_index_values
+gene_id	54.11	recodings	0	codon_index_values
+gene_id	54.15	recodings	1	codon_index_values	155	TAG
+gene_id	55	recodings	0	codon_index_values
+gene_id	56	recodings	0	codon_index_values
+gene_id	56.11	recodings	0	codon_index_values
+gene_id	56.15	recodings	1	codon_index_values	76	TAG
+gene_id	57	recodings	0	codon_index_values
+gene_id	58	recodings	0	codon_index_values
+gene_id	59	recodings	0	codon_index_values
+gene_id	60	recodings	0	codon_index_values
+gene_id	61	recodings	0	codon_index_values
+gene_id	61.11	recodings	0	codon_index_values
+gene_id	61.15	recodings	1	codon_index_values	216	TAG
+gene_id	62	recodings	0	codon_index_values
+gene_id	63	recodings	0	codon_index_values
+gene_id	64	recodings	0	codon_index_values
+gene_id	65	recodings	0	codon_index_values
+gene_id	66	recodings	0	codon_index_values
+gene_id	67	recodings	0	codon_index_values
+gene_id	68	recodings	0	codon_index_values
+gene_id	69	recodings	0	codon_index_values
+gene_id	70	recodings	0	codon_index_values
+gene_id	71	recodings	0	codon_index_values
+gene_id	72	recodings	0	codon_index_values
+gene_id	73	recodings	0	codon_index_values
+gene_id	74	recodings	2	codon_index_values	37	TAG	38	TAG
+gene_id	75	recodings	0	codon_index_values
+gene_id	76	recodings	0	codon_index_values
+gene_id	77	recodings	0	codon_index_values
+gene_id	78	recodings	9	codon_index_values	19	TAG	117	TAG	159	TAG	192	TAG	398	TAG	409	TAG	502	TAG	506	TAG	649	TAG
+gene_id	79	recodings	13	codon_index_values	9	TAG	73	TAG	82	TAG	119	TAG	124	TAG	147	TAG	159	TAG	160	TAG	455	TAG	501	TAG	515	TAG	570	TAG	743	TAG
+gene_id	80	recodings	0	codon_index_values
+gene_id	81	recodings	0	codon_index_values
+gene_id	81.11	recodings	0	codon_index_values
+gene_id	81.15	recodings	3	codon_index_values	18	TAG	28	TAG	35	TAG
+gene_id	82	recodings	11	codon_index_values	19	TAG	38	TAG	98	TAG	205	TAG	242	TAG	284	TAG	355	TAG	368	TAG	374	TAG	381	TAG	386	TAG
+gene_id	83	recodings	0	codon_index_values
+gene_id	84	recodings	0	codon_index_values
+gene_id	85	recodings	0	codon_index_values
+gene_id	85.11	recodings	0	codon_index_values
+gene_id	85.15	recodings	1	codon_index_values	214	TAG
+gene_id	86	recodings	0	codon_index_values
+gene_id	86.11	recodings	0	codon_index_values
+gene_id	86.15	recodings	1	codon_index_values	31	TAG
+gene_id	87	recodings	0	codon_index_values
+gene_id	88	recodings	0	codon_index_values
+gene_id	88.11	recodings	0	codon_index_values
+gene_id	88.15	recodings	1	codon_index_values	57	TAG
+gene_id	89	recodings	0	codon_index_values
+gene_id	90	recodings	4	codon_index_values	41	TAG	114	TAG	130	TAG	229	TAG
+gene_id	91	recodings	3	codon_index_values	51	TAG	196	TAG	219	TAG
+gene_id	92	recodings	4	codon_index_values	48	TAG	142	TAG	159	TAG	186	TAG
+gene_id	93	recodings	0	codon_index_values
+gene_id	94	recodings	0	codon_index_values
+gene_id	95	recodings	2	codon_index_values	89	TAG	136	TAG
+gene_id	96	recodings	0	codon_index_values
+gene_id	97	recodings	12	codon_index_values	99	TAG	781	TAG	887	TAG	889	TAG	927	TAG	933	TAG	963	TAG	1019	TAG	1021	TAG	1025	TAG	1037	TAG	1049	TAG
+gene_id	98	recodings	4	codon_index_values	62	TAG	66	TAG	120	TAG	121	TAG
+gene_id	99	recodings	13	codon_index_values	21	TAG	381	TAG	550	TAG	576	TAG	611	TAG	699	TAG	725	TAG	851	TAG	899	TAG	911	TAG	985	TAG	1108	TAG	1116	TAG
+gene_id	100	recodings	11	codon_index_values	28	TAG	83	TAG	99	TAG	130	TAG	340	TAG	537	TAG	624	TAG	630	TAG	656	TAG	679	TAG	735	TAG
+gene_id	101	recodings	0	codon_index_values
+gene_id	102	recodings	0	codon_index_values
+gene_id	103	recodings	9	codon_index_values	14	TAG	68	TAG	100	TAG	104	TAG	125	TAG	139	TAG	165	TAG	173	TAG	225	TAG
+gene_id	104	recodings	3	codon_index_values	30	TAG	38	TAG	188	TAG
+gene_id	105	recodings	8	codon_index_values	50	TAG	131	TAG	135	TAG	228	TAG	251	TAG	258	TAG	283	TAG	331	TAG
+gene_id	106	recodings	0	codon_index_values
+gene_id	107	recodings	4	codon_index_values	124	TAG	173	TAG	281	TAG	753	TAG
